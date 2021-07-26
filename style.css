@@ -186,7 +186,7 @@ main {
 
 aside, .content {
     position: sticky;
-    height: 90vh;
+    height: 100vh;
 }
 
 aside {
@@ -196,21 +196,72 @@ aside {
     max-width: 21.5vw;
 }
 
-aside a {
-    color: whitesmoke;
-    margin: auto;
-    font-size: 2.5vh;
-    line-height: 2;
+hr {
+    margin: 10px 0;
+
 }
 
-aside a:hover {
+.aside-data {
+    border: 2px solid white;
     color: white;
-    font-size: 3.2vh;
-    color: darkcyan;
+    padding: 10px;
 }
 
-aside a:visited {
-    color: darkcyan;
+#author {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#self {
+    margin: 40px 0 20px 0;
+}
+
+#name {
+    font-size: 3.5vh;
+    font-weight: 800;
+}
+
+#occupation {
+    font-size: 2.5vh;
+}
+
+#inspirational-quote {
+    font-style: italic;
+    font-weight: 200;
+    font-size: 2vh;
+    margin: 5px 0;
+}
+
+label {
+    font-size: 3.5vh;
+    font-weight: 1000;
+    margin: 0 10px;
+}
+
+#selectType, #selectType select option {
+    width: 200px;
+    height: 40px;
+    margin: 10px auto;
+    background-color: white;
+    color: teal;
+    font-size: 2.4vh;
+    padding: 8px;
+    border: none;
+    line-height: 20px;
+    border-radius: 5px;
+}
+
+#submitType {
+    width: 200px;
+    height: 40px;
+    background-color: darkcyan;
+    color: whitesmoke;
+    font-size: 2vh;
+    font-weight: 800;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    margin: 0 25px;
 }
 
 article {
@@ -247,7 +298,7 @@ article img {
     justify-content: space-evenly;
 }
 
-#self-potrait {
+.self {
     width: 150px;
     height: 150px;
     border: 5px dashed darkcyan;
@@ -286,7 +337,7 @@ article img {
     justify-content: space-evenly;
 }
 
-#name, #occupation {
+.name, .occupation {
     font-size: 2.8vh;
 }
 

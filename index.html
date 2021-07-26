@@ -32,23 +32,45 @@
         </header>
     
         <main class="container">
+
             <aside>
-                <li><a href="#ISTJ">ISTJ</a></li>
-                <li><a href="#ISFJ">ISFJ</a></li>
-                <li><a href="#INFJ">INFJ</a></li>
-                <li><a href="#INTJ">INTJ</a></li>
-                <li><a href="#ISTP">ISTP</a></li>
-                <li><a href="#ISFP">ISFP</a></li>
-                <li><a href="#INFP">INFP</a></li>
-                <li><a href="#INTP">INTP</a></li>
-                <li><a href="#ESTP">ESTP</a></li>
-                <li><a href="#ESFP">ESFP</a></li>
-                <li><a href="#ENFP">ENFP</a></li>
-                <li><a href="#ENTP">ENTP</a></li>
-                <li><a href="#ESTJ">ESTJ</a></li>
-                <li><a href="#ESFJ">ESFJ</a></li>
-                <li><a href="#ENFJ">ENFJ</a></li>
-                <li><a href="#ENTJ">ENTJ</a></li>
+
+                <hr>
+
+                <div class="aside-data">
+                    <ul>
+                        <li id="author">Author:</li>
+                        <li><img src="./assets/self.png" alt="me" class="self" id="self"></li>
+                        <li id="name">Sherary Apriliana</li>
+                        <li id="occupation">Backend Developer</li>
+                        <li id="inspirational-quote">"Please go easy on me. I am a Backend Developer and I am a beginner in front end."</li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <label for="type">Select your MBTI type!</label>
+                <select name="type" id="selectType">
+                    <option value="ISTJ">ISTJ</option>
+                    <option value="ISFJ">ISFJ</option>
+                    <option value="INTJ">INTJ</option>
+                    <option value="INFJ">INFJ</option>
+                    <option value="ESTJ">ESTJ</option>
+                    <option value="ESFJ">ESFJ</option>
+                    <option value="ENTJ">ENTJ</option>
+                    <option value="ENFJ">ENFJ</option>
+                    <option value="INTP">INTP</option>
+                    <option value="INFP">INFP</option>
+                    <option value="ENTP">ENTP</option>
+                    <option value="ENFP">ENFP</option>
+                    <option value="ISTP">ISTP</option>
+                    <option value="ISFP">ISFP</option>
+                    <option value="ESTP">ESTP</option>
+                    <option value="ESFP">ESFP</option>
+                </select>
+
+                <button type="submit" id="submitType" onclick="displayType()">Search!</button>
+
             </aside>
 
             <div class="content">
@@ -239,11 +261,11 @@
             <div class="data-diri">
 
                 <div class="biodata">
-                    <img src="./assets/self.png" alt="profil-picture" id="self-potrait">
+                    <img src="./assets/self.png" alt="profil-picture" class="self">
                     <li>
-                        <ul id="name">Sherary Apriliana</ul>
+                        <ul class="name">Sherary Apriliana</ul>
                         <ul id="city">Malang, Jawa Timur</ul>
-                        <ul id="occupation">Backend Developer</ul>
+                        <ul class="occupation">Backend Developer</ul>
                     </li>
                 </div>
 

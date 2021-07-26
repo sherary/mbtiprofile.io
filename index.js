@@ -70,3 +70,69 @@ function changeImg() {
     setTimeout('changeImg()', time);
 }
 window.onload=changeImg;
+
+// display MBTI type
+
+const displayType = () => {
+    const value = document.getElementById('selectType').value;
+    const submit = document.getElementById('submitType')
+    submit.addEventListener('submit', (event) => {
+        event.preventDefault();
+    
+        switch(value) {
+            case 'ISTJ':
+                window.location.href = 'https://sherary.github.io/#ISTJ';
+                break;
+            case 'ISFJ':
+                window.location.href = 'https://sherary.github.io/#ISFJ';
+                break;
+            case 'INTJ':
+                window.location.href = 'https://sherary.github.io/#INTJ';
+                break;
+            case 'INFJ':
+                window.location.href = 'https://sherary.github.io/#INFJ';
+                break;
+            case 'ESTJ':
+                window.location.href = 'https://sherary.github.io/#ESTJ';
+                break;
+            case 'ESFJ':
+                window.location.href = 'https://sherary.github.io/#ESFJ';
+                break;
+            case 'ENTJ':
+                window.location.href = 'https://sherary.github.io/#ENTJ';
+                break;
+            case 'ENFJ':
+                window.location.href = 'https://sherary.github.io/#ENTJ';
+                break;
+            case 'INTP':
+                window.location.href = 'https://sherary.github.io/#INTP';
+                break;
+            case 'INFP':
+                window.location.href = 'https://sherary.github.io/#INFP';
+                break;
+            case 'ENTP':
+                window.location.href = 'https://sherary.github.io/#ENTP';
+                break;
+            case 'ENFP':
+                window.location.href = 'https://sherary.github.io/#ENFP';
+                break;
+            case 'ISTP':
+                window.location.href = 'https://sherary.github.io/#ISTP';
+                break;
+            case 'ISFP':
+                window.location.href = 'https://sherary.github.io/#ISFP';
+                break;
+            case 'ESTP':
+                window.location.href = 'https://sherary.github.io/#ESTP';
+                break;
+            case 'ESFP':
+                window.location.href = 'https://sherary.github.io/#ESFP';
+                break;
+            default:
+                console.log(window.location.href, value.type);
+                break;
+        }
+    })
+}
+
+
