@@ -72,67 +72,81 @@ function changeImg() {
 window.onload=changeImg;
 
 // display MBTI type
+const submit = document.getElementById('submitType')
+const selectedValue = document.getElementById('selectType').value;
 
-const displayType = () => {
-    const value = document.getElementById('selectType').value;
-    const submit = document.getElementById('submitType')
-    submit.addEventListener('submit', (event) => {
-        event.preventDefault();
-    
-        switch(value) {
-            case 'ISTJ':
-                window.location.href = 'https://sherary.github.io/#ISTJ';
-                break;
-            case 'ISFJ':
-                window.location.href = 'https://sherary.github.io/#ISFJ';
-                break;
-            case 'INTJ':
-                window.location.href = 'https://sherary.github.io/#INTJ';
-                break;
-            case 'INFJ':
-                window.location.href = 'https://sherary.github.io/#INFJ';
-                break;
-            case 'ESTJ':
-                window.location.href = 'https://sherary.github.io/#ESTJ';
-                break;
-            case 'ESFJ':
-                window.location.href = 'https://sherary.github.io/#ESFJ';
-                break;
-            case 'ENTJ':
-                window.location.href = 'https://sherary.github.io/#ENTJ';
-                break;
-            case 'ENFJ':
-                window.location.href = 'https://sherary.github.io/#ENTJ';
-                break;
-            case 'INTP':
-                window.location.href = 'https://sherary.github.io/#INTP';
-                break;
-            case 'INFP':
-                window.location.href = 'https://sherary.github.io/#INFP';
-                break;
-            case 'ENTP':
-                window.location.href = 'https://sherary.github.io/#ENTP';
-                break;
-            case 'ENFP':
-                window.location.href = 'https://sherary.github.io/#ENFP';
-                break;
-            case 'ISTP':
-                window.location.href = 'https://sherary.github.io/#ISTP';
-                break;
-            case 'ISFP':
-                window.location.href = 'https://sherary.github.io/#ISFP';
-                break;
-            case 'ESTP':
-                window.location.href = 'https://sherary.github.io/#ESTP';
-                break;
-            case 'ESFP':
-                window.location.href = 'https://sherary.github.io/#ESFP';
-                break;
-            default:
-                console.log(window.location.href, value.type);
-                break;
-        }
-    })
-}
+const displayType = submit.addEventListener('submit', selection = (event) => {
+
+    switch(selectedValue) {
+        case 'ISTJ':
+            event.preventDefault();
+            document.getElementById('ISTJ').focus();
+            break;
+        case 'ISFJ':
+            event.preventDefault();
+            document.getElementById('ISFJ').focus();
+            break;
+        case 'INTJ':
+            event.preventDefault();
+            document.getElementById('INTJ').focus();
+            break;
+        case 'INFJ':
+            event.preventDefault();
+            document.getElementById('INFJ').focus();
+            break;
+        case 'ESTJ':
+            event.preventDefault();
+            document.getElementById('ESTJ').focus();
+            break;
+        case 'ESFJ':
+            event.preventDefault();
+            document.getElementById('ESFJ').focus();
+            break;
+        case 'ENTJ':
+            event.preventDefault();
+            document.getElementById('ENTJ').focus();
+            break;
+        case 'ENFJ':
+            event.preventDefault();
+            document.getElementById('ENFJ').focus();
+            break;
+        case 'INTP':
+            event.preventDefault();
+            document.getElementById('INTP').focus();
+            break;
+        case 'INFP':
+            event.preventDefault();
+            document.getElementById('INFP').focus();
+            break;
+        case 'ENTP':
+            event.preventDefault();
+            document.getElementById('ENTP').focus();
+            break;
+        case 'ENFP':
+            event.preventDefault();
+            document.getElementById('ENFP').focus();
+            break;
+        case 'ISTP':
+            event.preventDefault();
+            document.getElementById('ISTP').focus();
+            break;
+        case 'ISFP':
+            event.preventDefault();
+            document.getElementById('ISFP').focus();
+            break;
+        case 'ESTP':
+            event.preventDefault();
+            document.getElementById('ESTP').focus();
+            break;
+        case 'ESFP':
+            event.preventDefault();
+            document.getElementById('ESFP').focus();
+            break;
+        default:
+            event.preventDefault();
+            console.log(value);
+            break;
+    }
+})
 
 
